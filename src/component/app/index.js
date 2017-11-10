@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import MPost from '../mPost';
 
 
 class App extends React.Component {
@@ -14,6 +15,7 @@ class App extends React.Component {
                 <h1>
                     Homepage
                 </h1>
+                <MPost />
             </div>
         )
     }

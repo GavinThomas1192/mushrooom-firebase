@@ -16,6 +16,9 @@ let plugins = [
     new DefinePlugin({
         __DEBUG__: JSON.stringify(!production),
         __API_URL__: JSON.stringify(process.env.API_URL),
+        __FIREBASE_API_KEY__: JSON.stringify(process.env.FIREBASE_API_KEY),
+        __FIREBASE_AUTH_DOMAIN__: JSON.stringify(process.env.FIREBASE_AUTH_DOMAIN),
+        __FIREBASE_DB_URL__: JSON.stringify(process.env.FIREBASE_DB_URL),
     }),
 ];
 
